@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mateya Sakambuki | Information Systems &amp; Technology</title>
+<meta name="description" content="Portfolio of Mateya Sakambuki, an Information Systems and Technology student at the University of Lusaka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F7FA; --ink:#14243F; --muted:#51607A; --line:#D5DCE6;
+  --green:#1B6B47;  --card:#FFFFFF;
+  --head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+header{position:sticky;top:0;z-index:5;background:rgba(245,247,250,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{font:700 18px var(--head);text-decoration:none}
+nav{display:flex;gap:24px;align-items:center}
+nav a{text-decoration:none;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font:600 15px var(--body);padding:10px 20px;border-radius:8px;border:2px solid var(--green)}
+.btn:hover{background:#14583A;border-color:#14583A}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+header .btn{padding:7px 14px;color:#fff}
+nav a.btn,nav a.btn:hover{color:#fff}
+
+.hero{padding:88px 0 72px}
+.hero h1{font:800 clamp(44px,9vw,92px)/1 var(--head);letter-spacing:-.03em;animation:rise .8s ease both}
+.hero p.lead{font-size:clamp(19px,2.6vw,24px);color:var(--muted);max-width:34em;margin-top:24px;animation:rise .8s .12s ease both}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px;animation:rise .8s .24s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(28px,4vw,38px)/1.15 var(--head);letter-spacing:-.02em;margin-bottom:32px}
+h3{font:700 22px/1.3 var(--head)}
+
+.about{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start}
+.photo{width:200px;height:240px;border-radius:12px;background:var(--ink);overflow:hidden;display:grid;place-items:center;color:#fff;font:700 56px var(--head)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.about p+p{margin-top:16px}
+.facts{margin-top:24px;display:grid;gap:4px;color:var(--muted);font-size:15px}
+.facts strong{color:var(--ink);font-weight:500}
+
+.project{display:grid;grid-template-columns:1fr auto;gap:8px 32px;padding:28px 0;border-top:1px solid var(--line)}
+.project:first-of-type{border-top:0;padding-top:0}
+.project p{grid-column:1;max-width:44em;margin-top:6px}
+.tags{grid-column:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;list-style:none}
+.tags li{font-size:14px;padding:2px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted)}
+.project .btn{grid-column:2;grid-row:1;align-self:start}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px 40px}
+.skills h3{font-size:17px;margin-bottom:6px;color:var(--green)}
+.skills p{color:var(--ink)}
+
+.role p{color:var(--muted);font-size:15px;margin:2px 0 12px}
+.role ul{padding-left:20px;max-width:44em}
+.role li+li{margin-top:6px}
+
+.contact p{max-width:34em;color:var(--muted);margin-bottom:24px}
+.mail{color:var(--ink)!important;margin-bottom:20px!important}.copy{font:500 14px var(--body);margin-left:8px;padding:3px 12px;border:1px solid var(--ink);border-radius:6px;background:transparent;color:var(--ink);cursor:pointer}.copy:hover{background:var(--ink);color:#fff}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+footer{padding:32px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+
+@media (max-width:720px){
+  nav a:not(.btn){display:none}
+  .hero{padding:56px 0 48px}
+  .about{grid-template-columns:1fr;gap:24px}
+  .photo{width:160px;height:192px;font-size:44px}
+  .project{grid-template-columns:1fr}
+  .project .btn{grid-column:1;grid-row:auto;justify-self:start;margin-top:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero h1,.hero p.lead,.hero .actions{animation:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Mateya Sakambuki</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="Mateya_Sakambuki_CV.pdf" download>Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Mateya Sakambuki</h1>
+    <p class="lead">Information Systems and Technology student in Lusaka, building web and Android apps backed by solid databases.</p>
+    <div class="actions">
+      <a class="btn" href="Mateya_Sakambuki_CV.pdf" download>Download CV (PDF)</a>
+      <a class="btn ghost" href="#projects">See my projects</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="photo" aria-label="Photo of Mateya Sakambuki">
+        <!-- Save your photo as photo.jpg in this folder and it will appear here -->
+        <img src="photo.jpg" alt="Mateya Sakambuki" onerror="this.remove()" onload="this.nextElementSibling.remove()">
+        <span aria-hidden="true" style="grid-area:1/1">MS</span>
+      </div>
+      <div>
+        <h2>About me</h2>
+        <p>I’m finishing a BSc in Information Systems and Technology at the University of Lusaka. My coursework covers data structures, databases, networking and systems analysis, and I’ve put it to work in web and mobile projects.</p>
+        <p>I enjoy turning a real problem into a working system, from the database design to the screen people use. I’ve also worked in a team at the Yango Mobility Hackathon on urban transport challenges.</p>
+        <div class="facts">
+          <span><strong>Studying:</strong> BSc Information Systems &amp; Technology, University of Lusaka</span>
+          <span><strong>Graduating:</strong> December 2026</span>
+          <span><strong>Based in:</strong> Lusaka, Zambia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>E-Commerce Website</h3>
+        <a class="btn ghost" href="https://github.com/Mateya04/web-assignment-E-commerce" target="_blank" rel="noopener">View on GitHub</a>
+        <p>A responsive online store that covers the full retail flow, from product pages to the database behind them. It shows full-stack web development and digital marketing integration.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>SQL</li></ul>
+      </article>
+
+      <article class="project">
+        <h3>Weather Dashboard</h3>
+        <a class="btn ghost" href="https://github.com/Mateya04/Web-Assihnment" target="_blank" rel="noopener">View on GitHub</a>
+        <p>A real-time weather dashboard that pulls live data from an API and presents it in a responsive, interactive interface.</p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>SQL</li></ul>
+      </article>
+
+      <article class="project">
+        <h3>Personal Loan Tracker</h3>
+        <a class="btn ghost" href="https://github.com/Mateya04/Android-App" target="_blank" rel="noopener">View on GitHub</a>
+        <p>An Android app for managing personal loans. It handles borrower records, repayment tracking and configurable interest rates, with data stored in Firebase.</p>
+        <ul class="tags"><li>Android</li><li>AI Studio</li><li>Firebase Firestore</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Languages</h3><p>Java, Python, JavaScript, C#, SQL</p></div>
+        <div><h3>Frameworks and web</h3><p>Java Swing, HTML, CSS</p></div>
+        <div><h3>Tools</h3><p>MySQL, XAMPP</p></div>
+        <div><h3>Core strengths</h3><p>Object-oriented programming, database management, systems analysis, deployment, data analysis</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap role">
+      <h2>Hackathon experience</h2>
+      <h3>Yango Mobility Hackathon, hosted by Zindi</h3>
+      <p>Lusaka, Zambia, 2023 to 2024</p>
+      <ul>
+        <li>Worked under time pressure on urban mobility challenges.</li>
+        <li>Collaborated with a multidisciplinary team to design and prototype scalable software.</li>
+        <li>Contributed to brainstorming, system architecture and the final technical pitch.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p>I’m open to graduate roles and internships in software, systems and data. Email is the quickest way to reach me.</p>
+      <p class="mail">Email: <a href="mailto:mateyasakambuki04@gmail.com">mateyasakambuki04@gmail.com</a> <button type="button" class="copy" id="copy">Copy address</button></p>
+      <div class="links">
+        <a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=mateyasakambuki04@gmail.com&su=Hello%20Mateya" target="_blank" rel="noopener">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mateya-sakambuki-1b9447407" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/Mateya04" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://wa.me/260764260342?text=Hello%20Mateya" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="tel:+260764260342">+260 764 260 342</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Mateya Sakambuki</div>
+</footer>
+<script>
+document.getElementById("copy").addEventListener("click",function(){
+  var b=this,t="mateyasakambuki04@gmail.com";
+  function done(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy address"},2000)}
+  if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,function(){window.prompt("Copy this address:",t)})}
+  else{window.prompt("Copy this address:",t)}
+});
+</script>
+</body>
+</html>
